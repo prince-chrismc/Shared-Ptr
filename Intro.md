@@ -16,6 +16,37 @@ Shared pointers are comprised of two componets, an object pointer and a control 
 - allocator
 - deletor
 - shared ref count
-- weak ref count
+- weak ref count // TODO: explain what are weak ptrs
+
  **NOTE**: When instatiated with `std::make_shared` or `std::allocate` the object is a member of the control block whereas with the constructors of a shared pointer it is a pointer to the object given.
  
+#### Pseudo Implementations
+Note the actual compiler implementatsions may vary but this provides a visual to how they may work.
+
+###### From `make_shared()`
+```c++
+template type Object
+class shared_ptr<Object>
+{
+ private:
+    Object obj;
+    Controlllock cblk;
+};
+```
+
+###### From `shared_ptr` ctor
+```c++
+template type Object
+class shared_ptr<Object>
+{
+public:
+    shared_ptr(void* raw)
+    {
+        obj = dynamic_cast<Obj>(raw);
+    }
+    
+private:
+    Object* obj;
+    Controlllock cblk;
+};
+```
