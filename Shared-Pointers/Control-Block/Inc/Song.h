@@ -44,6 +44,9 @@ public:
    SongEnabled(const std::string& author, const std::string& title);
    ~SongEnabled();
 
+   std::shared_ptr<SongEnabled> GetShared() noexcept;
+   std::weak_ptr<SongEnabled> GetWeak() noexcept { weak_from_this(); }
+
 private:
    std::string m_Author;
    std::string m_Title;

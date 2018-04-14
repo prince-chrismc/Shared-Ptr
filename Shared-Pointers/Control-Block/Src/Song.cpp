@@ -39,3 +39,18 @@ SongEnabled::SongEnabled(const std::string & author, const std::string & title) 
 SongEnabled::~SongEnabled()
 {
 }
+
+std::shared_ptr<SongEnabled> SongEnabled::GetShared() noexcept
+{
+   std::shared_ptr<SongEnabled> out_ptr = nullptr;
+
+   try
+   {
+      out_ptr = shared_from_this();
+   }
+   catch (const std::bad_weak_ptr& )
+   {
+
+   }
+   return out_ptr;
+}
