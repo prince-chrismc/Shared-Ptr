@@ -27,28 +27,28 @@ Note the actual compiler implementatsions may vary but this provides a visual to
 
 ###### From `make_shared()`
 ```c++
-template type Object
+template<class Object>
 class shared_ptr<Object>
 {
  private:
     Object obj;
-    Controlllock cblk;
+    Controlblock cblk;
 };
 ```
 
 ###### From `shared_ptr` ctor
 ```c++
-template type Object
+template<class Object>
 class shared_ptr<Object>
 {
 public:
     shared_ptr(void* raw)
     {
-        obj = dynamic_cast<Obj>(raw);
+        obj = dynamic_cast<Object>(raw);
     }
     
 private:
     Object* obj;
-    Controlllock cblk;
+    Controlblock cblk;
 };
 ```
