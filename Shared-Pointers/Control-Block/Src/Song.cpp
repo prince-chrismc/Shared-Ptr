@@ -32,7 +32,7 @@ Song::~Song()
 {
 }
 
-SongEnabled::SongEnabled(const std::string & author, const std::string & title)
+SongEnabled::SongEnabled(const std::string & author, const std::string & title) : m_Author(author), m_Title(title)
 {
 }
 
