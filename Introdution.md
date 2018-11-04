@@ -102,4 +102,8 @@ Shared pointers are comprised of two componets, an object pointer and a control 
  **NOTE**: When instatiated with `std::make_shared` or `std::allocate` the object is a member of the control block whereas with the constructors of a shared pointer it is a pointer to the object given.
  
 <p align="center"><img src ="https://github.com/prince-chrismc/Shared-Ptr/blob/master/Docs/Images/shared_ptr_diagram.png" /></p>
+
+why to pass-by value...
+
+You will want your second thread to have a copy of the reference to the object. Both threads will partage in the life cycle of the object. This avoids handling `nullptr`s and who delete's the object and when. How will they synchronize... etc...
  
