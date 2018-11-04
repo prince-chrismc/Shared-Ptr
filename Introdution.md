@@ -1,6 +1,10 @@
 # Introduction
 What are the various types of pointers?
 
+#### To Do
+- [ ] explain what are weak ptrs
+- [ ] default advice
+
 ### Table of Contents
 1. [C++03 and raw pointers](Raw-Pointer)
 2. [Shared Pointer Introduction](Shared-Pointers)
@@ -91,7 +95,7 @@ Shared pointers are comprised of two componets, an object pointer and a control 
 - allocator
 - deletor
 - shared ref count
-- weak ref count // TODO: explain what are weak ptrs
+- weak ref count
 
  **NOTE**: When instatiated with `std::make_shared` or `std::allocate` the object is a member of the control block whereas with the constructors of a shared pointer it is a pointer to the object given.
  
