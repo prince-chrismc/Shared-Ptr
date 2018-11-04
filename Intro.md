@@ -97,33 +97,3 @@ Shared pointers are comprised of two componets, an object pointer and a control 
  
 <p align="center"><img src ="https://github.com/prince-chrismc/Shared-Ptr/blob/master/Docs/Images/shared_ptr_diagram.png" /></p>
  
-#### Pseudo Implementations
-Note the actual compiler implementatsions may vary but this provides a visual to how they may work.
-
-###### From `make_shared()`
-```c++
-template<class Object>
-class shared_ptr<Object>
-{
- private:
-    Object obj;
-    Controlblock cblk;
-};
-```
-
-###### From `shared_ptr` ctor
-```c++
-template<class Object>
-class shared_ptr<Object>
-{
-public:
-    shared_ptr(void* raw)
-    {
-        obj = dynamic_cast<Object>(raw);
-    }
-    
-private:
-    Object* obj;
-    Controlblock cblk;
-};
-```
