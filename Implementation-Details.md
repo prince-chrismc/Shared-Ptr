@@ -1,5 +1,39 @@
 # Implementation-Details
 
+### Table of Contents
+1. [Pseudo Implementations](#Pseudo-Implementations)
+2. [Known Issues](#Known-Issues-(-2010-))
+
+### Pseudo Implementations
+Note the actual compiler implementatsions may vary but this provides a visual to how they may work.
+
+###### From `make_shared()`
+```c++
+template<class Object>
+class shared_ptr<Object>
+{
+ private:
+    Object obj;
+    Controlblock cblk;
+};
+```
+
+###### From `shared_ptr` ctor
+```c++
+template<class Object>
+class shared_ptr<Object>
+{
+public:
+    shared_ptr(void* raw)
+    {
+        obj = dynamic_cast<Object>(raw);
+    }
+    
+private:
+    Object* obj;
+    Controlblock cblk;
+};
+```
 
 ### Known Issues ( 2010 )
 Issues with shared_ptr in MCVS2010
