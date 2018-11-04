@@ -3,9 +3,7 @@
 <p align="center"><img src ="https://github.com/prince-chrismc/Shared-Ptr/blob/master/Docs/Images/shared_ptr_diagram.png" /></p>
 
 ## Goal of this project
-Working full time as a software developper I face the envitable challenge of working with legacy code; code that existed before I even statered programming, before I was even born. A side affect of this is my peers often have little to no experience using modern C++. This has blown up in our faces. In preperation of the SDK release we realized the usage of `std::shared_ptr` was a crippiling factor breaking a fundamental interprocess library ( which I originally wrote a few years back ).
-
-This repository aim to outline the basics of `std::shared_ptr` primarily in C++17, working to a more real world application, and highlighting the differences that came over time.
+Having worked for several years with c++98 to C++03 era code at work, it's finally around the corner that we will be able to develop our SDK using modern C++. This comes with many advantages however one very big issue is not everyone has expereience using a more modern approach and this knowledge gap can limit the quality of the prodect. In and attempt to correct this, I have revived this project in order to have some [simple guidence](Introction.md) for those who are new to c++11's managed pointers. I have also seperated the [technical details](Implementation-Details.md) for those who may be more interested/passionate to continue learning.
 
 #### Attributes
 * [ISO CPP CORE](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#S-resource)
