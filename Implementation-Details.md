@@ -1,5 +1,7 @@
 # Implementation-Details
 
+- [ ] how pholymorphoc deletes work due to `deleter`
+
 ### Table of Contents
 1. [Pseudo Implementations](#Pseudo-Implementations)
 2. [Known Issues](#Known-Issues-(-2010-))
