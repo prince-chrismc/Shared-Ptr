@@ -15,6 +15,8 @@ Pointers in C++ are memory localations restricted by a type. Seen as `Type* obje
 It was the only way for a very long done. The most challenging scenario in highly object-oriented deisgn is when an elemented is 'owned' but multiple instances.
 
 Here's a smaple `C` program...
+> I choose a `C` program because there are far more ways with objects ( non-virtual dtor or polymorphism ), exceptions, etc... That making an example to show common mistakes would be too long and not add clarity to this guide.
+
 ```c
 struct toyMouse
 {
