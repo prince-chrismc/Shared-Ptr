@@ -14,3 +14,4 @@ Having worked for several years with c++98 to C++03 era code at work, it's final
 #### Inspiration
 * [blog 1](https://www.bfilipek.com/2013/02/smart-pointers-gotchas.html)
 * [blog 2](https://herbsutter.com/2012/06/05/gotw-105-smart-pointers-part-3-difficulty-710/)
+* [stackoverflow](https://stackoverflow.com/a/77893/8480874)
