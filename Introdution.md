@@ -85,7 +85,7 @@ I managed to squeeze every kind of problem in one small snippet! Mistakes:
 - access memory which has been `free()`
 - changing pointers adress without freeing original memory
 
-It's very easy to make these kinds of mistakes. 
+It's _very easy_ to make these kinds of mistakes. 
 
 In this example both `cat`s have ownership of the sam `toyMouse` and when ever they are done playing with it they disgard ( or in our case `free` ) the toy. This however doesn't account for the other `catPlaysWithToy()` later on; who will enveitably get board of the mouse and `free` it as well.
 
