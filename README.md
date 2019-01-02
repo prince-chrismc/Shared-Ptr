@@ -33,3 +33,4 @@ Having worked for several years with c++98 to C++03 era code at work, it's final
 
 ##### Similar Guides
 * [Easy Read](https://github.com/CodesBay/CplusPlus_SmartPointer)
+* [Updated examination](https://www.internalpointers.com/post/move-smart-pointers-and-out-functions-modern-c)
