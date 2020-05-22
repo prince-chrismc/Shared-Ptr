@@ -1,5 +1,5 @@
 <h1 align="center">Shared-Ptr</h1>
-<p align="center">An analysis of modern C++ std::shared_ptr</p>
+<p align="center">An brief note on C++ std::shared_ptr</p>
 <p align="center"><img src ="https://github.com/prince-chrismc/Shared-Ptr/blob/master/Docs/Images/shared_ptr_diagram.png" /></p>
 
 ### Goal of this project
