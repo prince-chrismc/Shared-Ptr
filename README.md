@@ -3,7 +3,7 @@
 <p align="center"><img src ="https://github.com/prince-chrismc/Shared-Ptr/blob/master/Docs/Images/shared_ptr_diagram.png" /></p>
 
 ### Goal of this project
-Having worked for several years with c++98 to C++03 era code at work, it's finally around the corner that we will be able to develop our SDK using _modern C++_. This comes with many advantages however one very big issue is not everyone has expereience using a more modern approach and this knowledge gap can limit the quality of the product. In and attempt to correct this, I have revived this project in order to have some [simple guidence](Introdution.md) for those who are new to C++11's managed pointers. I have also seperated the [technical details](Implementation-Details.md) for those who may be more interested/passionate to continue learning.
+Having worked for several years with c++98 to C++03 era code at work, it's finally around the corner that we will be able to develop our SDK using _modern C++_. This comes with many advantages however one very big issue is not everyone has expereience using a more modern approach and this knowledge gap can limit the quality of the product. In and attempt to correct this, I have revived this project in order to have some [simple guidence](Introdution.md) for those who are new to C++11's managed pointers.
 
 ### Executive Summary
 - [ ] Fill in summary...
