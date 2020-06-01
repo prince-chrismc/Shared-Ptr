@@ -2,8 +2,9 @@
 What are the various types of pointers?
 
 #### To Do
-- [ ] explain what are weak ptrs
+- [ ] explain weak ptrs
 - [ ] default advice
+- [ ] dynamic pointer cast
 
 ### Table of Contents
 1. [C++03 and raw pointers](Raw-Pointer)
