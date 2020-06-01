@@ -1,10 +1,10 @@
 # Introduction
-What are the various types of pointers?
 
 #### To Do
 - [ ] explain weak ptrs
 - [ ] default advice
 - [ ] dynamic pointer cast
+- [ ] dynamic deletion shared_ptr<void>
 
 ### Table of Contents
 1. [C++03 and raw pointers](Raw-Pointer)
